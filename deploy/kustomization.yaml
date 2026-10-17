@@ -12,4 +12,4 @@ labels:
 images:
   - name: app-image
     newName: ghcr.io/notdom1n1c/hello-api
-    newTag: latest
+    newTag: sha-e3d817e
