@@ -1,4 +1,4 @@
-// __APP__: a small JSON API, created with LAUNCHPAD.
+// hello-api: a small JSON API, created with LAUNCHPAD.
 // No dependencies: plain node:http, so the image stays tiny and has almost nothing to scan.
 
 const started = Date.now();
@@ -35,7 +35,7 @@ function metrics() {
 }
 
 const routes = {
-  "/": () => [200, { app: "__APP__", message: "Hello from LAUNCHPAD", docs: ["/healthz", "/metrics", "/api/time"] }],
+  "/": () => [200, { app: "hello-api", message: "Hello from LAUNCHPAD", docs: ["/healthz", "/metrics", "/api/time"] }],
   "/healthz": () => [200, { status: "ok" }],
   "/api/time": () => [200, { now: new Date().toISOString(), uptimeSeconds: Math.round((Date.now() - started) / 1000) }],
 };

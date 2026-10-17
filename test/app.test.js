@@ -21,7 +21,7 @@ test("health check answers ok", async () => {
 
 test("root names the app", async () => {
   const body = await (await fetch(`${base}/`)).json();
-  assert.equal(body.app, "__APP__");
+  assert.equal(body.app, "hello-api");
 });
 
 test("unknown routes are 404", async () => {

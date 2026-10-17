@@ -1,7 +1,7 @@
 {
-  "name": "__APP__",
+  "name": "hello-api",
   "version": "1.0.0",
-  "description": "__DESCRIPTION__",
+  "description": "Demo JSON API created through the LAUNCHPAD portal",
   "type": "module",
   "private": true,
   "scripts": {

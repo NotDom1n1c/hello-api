@@ -11,5 +11,5 @@ labels:
       app.kubernetes.io/part-of: launchpad
 images:
   - name: app-image
-    newName: ghcr.io/__OWNER__/__APP__
+    newName: ghcr.io/notdom1n1c/hello-api
     newTag: latest

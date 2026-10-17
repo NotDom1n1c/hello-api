@@ -2,11 +2,11 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: __APP__
+  name: hello-api
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: __APP__
+      app.kubernetes.io/name: hello-api
   endpoints:
     - port: http
       path: /metrics
